@@ -1,0 +1,197 @@
+
+.page-template-page-registration{
+	background: url(../images/general/sparklesRight.png) 140% 0 no-repeat #e0eef2;
+	
+	@media only screen and (min-width: 40.063em) {
+		background: url(../images/general/sparklesRight.png) bottom right no-repeat #e0eef2;
+	}
+	
+	.page-header{
+		background: transparent;
+		height: 70px;
+		
+		&:before{
+			background: #A4B2B6;
+		}
+		
+		@media only screen and (min-width: 40.063em) {
+			height: 80px;	
+		}
+	}
+}	
+
+.block-wrap{
+	position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+		
+	/* min-width 641px */
+	@media only screen and (min-width: 40.063em) {
+		background: url(../images/general/sparklesLeft.png) top left no-repeat;
+	}
+}
+
+.central-col{
+	margin-top: 0;
+	text-align: center;
+	
+	.we-are{
+		max-width: 260px;
+		margin-bottom: 2rem;
+	}
+
+	p{
+		color: $text;
+		text-align: center;
+		font-size: 1.4rem;
+		font-family: 'the_hippia_sansregular';
+		font-weight: 600;
+		margin: 0;
+		max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    &.small{
+	    font-family: arial;
+			font-weight: normal;
+			font-size: 0.8rem;
+    }
+	}
+	
+	.reg-form_wrapper{
+		max-width: 100%;
+		margin: 0;
+		
+		.reg-form{
+			padding: 0 0.5rem;
+			
+			.gform_body{
+				width: 100%;
+				
+				.gfield{
+					margin-top: 1rem;
+					list-style-type: none;
+					
+					label{
+						display: none;
+					}
+					
+					.ginput_container{
+						margin: 0;
+						
+						input{
+							width: 100%;
+							padding: 0.5rem 0.8rem;
+							color: #9d5a5a;
+							font-size: 1rem;
+						}
+					}
+					
+					&.gfield_error {
+						width: 100%;
+						
+						.ginput_container{
+							max-width: 100%;
+						}
+					}
+				}
+			}	
+			
+			.gform_footer{
+				margin: 0;
+				padding: 1rem 0;
+				
+				.gform_button {
+					width: 100%;
+					background: #DE8282;
+					color: $white;
+					@include transition();
+					padding: 0.5rem;
+					font-size: 1rem;
+					border: none;
+
+					
+					&:hover{
+						background: darken(#DE8282, 10%);
+					}
+				}
+			}	
+			
+			.validation_error{
+				background: $white;
+				width: 100%;
+				padding: 1rem;
+				margin-top: 2rem;
+			}
+		}
+		
+		@media only screen and (min-width: 40.063em) {
+			
+			.reg-form .gform_body .gfield{
+				padding-right: 0;
+			}
+			
+			.reg-form .gform_body .gfield .ginput_container input,
+			.reg-form .gform_footer .gform_button{
+				padding: 0.8rem !important;
+				font-size: 1.2rem !important;
+			}
+		}
+	}
+	
+	.gform_confirmation_wrapper{
+		margin-top: 2rem;
+		text-align: center;
+		
+		.thanks{
+			font-family: arial;
+			font-weight: normal;
+			font-size: 1rem;
+		}
+		
+		.guest-btn{
+			display: inline-block;
+			padding: 1rem 2rem;
+			font-size: 1rem;
+			background: #DE8282;
+			color: $white;
+			@include transition();
+			@include border-radius();
+			text-decoration: none;
+			cursor: pointer;
+			
+			&:hover{
+				background: darken(#DE8282, 10%);
+			}
+		}
+	}
+	
+	@media only screen and (min-width: 40.063em) {
+		margin-top: 2rem;
+	}
+}
+
+
+
+/* min-width 641px */
+@media only screen and (min-width: 40.063em) {
+
+}
+
+/* min-width 769px */
+@media only screen and (min-width: 48.063em) {
+	
+}
+
+/* min-width 1025px */
+@media only screen and (min-width: 64.063em) {
+	
+}
+
+/* min-width 1441px */
+@media only screen and (min-width: 90.063em) {
+	
+}

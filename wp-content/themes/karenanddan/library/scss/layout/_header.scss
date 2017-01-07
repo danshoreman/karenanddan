@@ -1,0 +1,144 @@
+.page-header{
+	text-align: center;
+	position: relative;
+	height: 500px;
+	background-position: top center;
+	@include back-size(cover);
+	
+	.header-utils{
+		
+		&:after{
+			content: '';
+			display: table;
+			clear: both;
+		}
+	}
+	
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		@include alpha-attribute('background-color', rgba(#121c25, 0.35), white); 
+	}
+	
+	.hero-img{
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	
+	.main-logo{
+		display: block;
+		margin-top: 1rem;
+		width: 150px;
+		float: left;
+		
+		img{
+			background: transparent;
+		}
+	}
+	
+	.title{
+		color: $white;
+		@include header-font;
+		font-size: 3rem;
+		text-transform: uppercase;
+		line-height: 1;
+		margin: 10rem 0 0 0;
+	}
+	
+	.sub_title{
+		color: $gold;
+		@include body-font;
+		margin: 0 auto;
+		font-size: 1.6rem;
+		max-width: 270px;
+	}
+	
+	/* min-width 641px */
+	@media only screen and (min-width: 40.063em) {
+		
+		height: 600px;
+		
+		.title{
+			font-size: 3rem;
+			margin: 12rem 0 0 0;
+		}
+	
+		.sub_title{
+			font-size: 1.6rem;
+			max-width: 270px;
+		}
+	}
+	
+	/* min-width 769px */
+	@media only screen and (min-width: 48.063em) {
+		
+		height: 700px;
+		
+		.header-utils{
+			width: 30%;
+			float: left;
+		}
+		
+		.main-logo{
+			width: 200px;
+			float: none;
+		}
+		
+		.title{
+			font-size: 3.4rem;
+			margin: 17rem 0 0 0;
+		}
+	
+		.sub_title{
+			font-size: 1.6rem;
+			max-width: 270px;
+		}
+	}
+	
+	/* min-width 1025px */
+	@media only screen and (min-width: 64.063em) {
+		
+		height: 800px;
+		
+		.title{
+			font-size: 4rem;
+			margin: 21rem 0 0 0;
+		}
+	
+		.sub_title{
+			font-size: 1.6rem;
+			max-width: inherit;
+		}
+	}
+}
+
+
+
+
+
+/* min-width 641px */
+@media only screen and (min-width: 40.063em) {
+
+}
+
+/* min-width 769px */
+@media only screen and (min-width: 48.063em) {
+	
+}
+
+/* min-width 1025px */
+@media only screen and (min-width: 64.063em) {
+	
+}
+
+/* min-width 1441px */
+@media only screen and (min-width: 90.063em) {
+	
+}

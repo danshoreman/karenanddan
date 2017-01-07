@@ -1,0 +1,106 @@
+###############################################################################
+##                                                                            #
+##		GIT IGNORE FOR WORDPRESS SITES     		                              #
+##		------------------------------     									  #
+##		Adapted from: http://bigwilliam.com/gitignore-for-wordpress-projects/ #
+##                                                                            #
+###############################################################################
+
+###############################################################################
+##                                                                            #
+##       NOTE: TO STOP TRACKING A FILE AFTER IGNORING IT,                     #
+##             USE THESE GIT COMMANDS:                                        #
+##                                                                            #
+##             git rm --cached <file>                                         #
+##             git add . # or git add <file>                                  #
+##                                                                            #
+###############################################################################
+
+
+## OS and Utility Stuff ##
+
+#==================#
+#     OS Files     #
+#==================#
+*.DS_Store
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+*[Tt]humbs.db
+*.Trashes
+
+
+#==================#
+#    Log files     #
+#==================#
+*.log
+error_log
+access_log
+.sass-cache
+*.css.map
+
+
+#===================================#
+#       Config. and npm Files       #
+#===================================#
+local-config.php
+wp-config.php
+node_modules
+
+
+
+## Main Stuff ##
+
+#===================================#
+#     WP Core, except content       #
+#===================================#
+/*
+!.gitignore
+!wp-content/
+# !media/
+!favicon.ico
+!favicon.png
+!robots.txt
+!humans.txt
+
+#=============================================#
+#     wp-content, except plugins and themes   #
+#=============================================#
+wp-content/*
+!wp-content/plugins/
+!wp-content/plugins/index.php
+!wp-content/mu-plugins/
+!wp-content/mu-plugins/index.php
+!wp-content/themes/
+!wp-content/themes/index.php
+# !wp-content/uploads
+
+
+## Use these to get more specific ##
+
+#===========================#
+#      Specific Plugins     #
+#===========================#
+wp-content/plugins/*
+
+## !wp-content/plugins/my-single-file-plugin.php
+## !wp-content/plugins/my-directory-plugin/
+
+!wp-content/plugins/rest-api/
+!wp-content/plugins/amp/
+!wp-content/plugins/fb-instant-articles/
+!wp-content/plugins/advanced-custom-fields-pro/
+!wp-content/plugins/gravityforms/
+!wp-content/plugins/jetpack/
+!wp-content/plugins/wordpress-seo/
+!wp-content/plugins/akismet/
+
+#===========================#
+#     Specific Themes       #
+#===========================#
+wp-content/themes/*
+
+!wp-content/themes/karenanddan
